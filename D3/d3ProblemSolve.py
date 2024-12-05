@@ -8,9 +8,7 @@ def compute_mul_sum_from_file(file_path):
     with open(file_path, 'r') as file:
         memory_input = file.read()
     
-    # Regular expression to match valid mul(X,Y) instructions
     pattern = r"mul\((\d{1,3}),(\d{1,3})\)"
-    
     
     matches = re.findall(pattern, memory_input)
     
